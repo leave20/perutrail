@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "181530137411",
+    "firebase_url": "https://flutter-app-6019a-default-rtdb.firebaseio.com",
+    "project_id": "flutter-app-6019a",
+    "storage_bucket": "flutter-app-6019a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181530137411:android:0a0f4d2589ff3ed55815f6",
+        "android_client_info": {
+          "package_name": "com.craig.pe.perutrail"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181530137411-d72fg72thigcp8l0f53701ppmsmsvopd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craig.pe.perutrail",
+            "certificate_hash": "00755734686af67a85cbcd132007e02d60e649df"
+          }
+        },
+        {
+          "client_id": "181530137411-5qb9lmftd3ap7uksgdc4ueg6o6d5t3tq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBzkSg_ZLxMGVLIjlR_5hf6SraA7pGqIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181530137411-5qb9lmftd3ap7uksgdc4ueg6o6d5t3tq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

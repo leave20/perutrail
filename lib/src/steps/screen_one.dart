@@ -8,12 +8,8 @@ import 'package:perutrail/src/components/slanding_clipper.dart';
 
 import 'screen_second.dart';
 
-class OnBoardingScreenOne extends StatefulWidget {
-  @override
-  _OnBoardingScreenOneState createState() => _OnBoardingScreenOneState();
-}
+class OnBoardingScreenOne extends StatelessWidget {
 
-class _OnBoardingScreenOneState extends State<OnBoardingScreenOne> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;

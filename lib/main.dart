@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:perutrail/src/pages/login_page.dart';
+import 'package:get/get.dart';
+import 'package:perutrail/src/routes/routes.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'src/steps/screen_one.dart';
+
 
 int initScreen;
 
@@ -10,29 +11,29 @@ Future<void> main() async {
   SharedPreferences preferences = await SharedPreferences.getInstance();
   initScreen = preferences.getInt('initScreen');
   await preferences.setInt('initScreen', 1);
+
+  // await FirebaseAuth.instance;
   runApp(MyApp());
 }
 
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
-}
+class MyApp extends StatelessWidget {
 
-class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
+      navigatorKey: Get.key,
       debugShowCheckedModeBanner: false,
       title: 'Material App',
       theme: ThemeData(
         primaryColor: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      initialRoute: initScreen == 0 || initScreen == null ? 'onboard' : 'login',
-      routes: {
-        'login': (context) => LoginPage(),
-        'onboard': (context) => OnBoardingScreenOne(),
-      },
+      initialRoute: initScreen == 0 || initScreen == null ? "/onboard" : "/home",
+      getPages: routes(),
     );
   }
 }
+
+
+
+

@@ -29,10 +29,14 @@ dependencies:
   cupertino_icons: ^1.0.2
   shared_preferences:
   page_transition:
+  google_sign_in:
+  get:
+  fancy_bottom_navigation:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
